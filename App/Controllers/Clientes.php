@@ -5,6 +5,9 @@ use App\Core\Controller;
 class Clientes extends Controller{
 
     public function index(){
+
+        print_r($_ENV);
+
         $clienteModel = $this->model("Cliente");
 
         $clientes = $clienteModel->listarTodos();
